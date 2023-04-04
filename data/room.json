@@ -1,0 +1,26 @@
+{
+  "room": [
+    {
+      "id": 1,
+      "name": "nobo",
+      "email": "nobo@gmail.com",
+      "phone": 8493889399,
+      "room-type": "Single",
+      "members": 1,
+      "from": "22/3/2022",
+      "to": "23/3/2022",
+      "comment": "need cool room"
+    },
+    {
+      "name": "nora",
+      "email": "nora@gmail.com",
+      "phone": "84038082",
+      "roomType": "double",
+      "members": "4",
+      "fromDate": "2023-01-03",
+      "toDate": "2023-01-10",
+      "comment": "no comments",
+      "id": 2
+    }
+  ]
+}

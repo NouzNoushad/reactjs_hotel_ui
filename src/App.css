@@ -1,0 +1,286 @@
+:root {
+  --max-width: 1200px;
+  --black-color: black;
+  --nav-height: 80px;
+  --nav-box-color: rgb(207, 58, 108);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgba(0, 0, 0);
+  height: var(--nav-height);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-logo {
+  background-color: var(--nav-box-color);
+  padding: 30px 25px;
+}
+
+.hotel-logo h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-style: italic;
+}
+
+.hotel-logo h2 {
+  color: gold;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+ul {
+  height: var(--nav-height);
+  margin: auto 0px;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  color: white;
+}
+
+li:hover {
+  border-bottom: 1px solid var(--nav-box-color);
+}
+
+/* Hero Home */
+
+.hero-home {
+  height: 88vh;
+  background-image: url('../public/images/mountain-home.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-home h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  height: 50px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 2px black;
+}
+
+.hero-home h3 {
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 2px black;
+}
+
+.hero-header {
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(87, 1, 87)
+}
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: white;
+}
+
+.welcome-container {
+  width: 280px;
+  text-align: center;
+}
+
+.welcome-container img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.welcome-container h2 {
+  font-weight: 300;
+}
+
+.welcome-container p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.welcome-container button {
+  border: none;
+  background-color: var(--nav-box-color);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.welcome-container button:hover {
+  color: var(--nav-box-color);
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.hero-description {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.hero-description h1, h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero-description h1 {
+  color: var(--nav-box-color);
+}
+
+.hero-description p {
+  width: 1000px;
+}
+
+.hero-gallery {
+  /* height: 70vh; */
+  background-color: rgb(61, 55, 67);
+}
+
+.hero-gallery .container {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-gallery img {
+  height: 350px;
+  width: 600px;
+}
+
+.gallery-details {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-details h2 {
+  font-weight: 500;
+}
+
+.book-room {
+  width: 300px;
+}
+
+.book-room h4 {
+  background-color: rgb(82, 74, 89);
+  color: white;
+  padding: 6px 10px;
+  font-weight: 500;
+}
+
+.book-room form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: black;
+}
+
+.book-room input, textarea, select {
+  border: none;
+  background-color: rgb(52, 44, 55);
+  margin-bottom: 10px;
+  padding: 8px;
+  color: gray;
+}
+
+.book-room button {
+  border: none;
+  color: white;
+  background-color: var(--nav-box-color);
+  padding: 5px 10px;
+  align-self: flex-end;
+}
+
+.hero-more {
+  height: 20vh;
+  padding: 20px;
+}
+
+.hero-more .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-more .details {
+  width: 150px;
+}
+
+.details h3, p {
+  text-transform: uppercase;
+}
+
+.details h3 {
+  color: var(--nav-box-color);
+  font-weight: 500;
+  
+}
+
+.details p {
+  font-size: 0.8rem;
+}
+
+footer {
+  height: 20vh;
+  background-color: rgb(61, 55, 67);
+  color: white;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 35px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-content h5, h6 {
+  font-weight: 500;
+}
